@@ -3,324 +3,241 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Placenta Vida | Encapsulación de placenta, doula y cursos en Puerto Rico</title>
-<meta name="description" content="Placenta Vida acompaña tu embarazo, parto y posparto en Puerto Rico: encapsulación de placenta, servicios de doula y cursos de parto, posparto y lactancia.">
+<title>Placenta Vida | Placenta Pills, doula, cursos y consultas en Puerto Rico</title>
+<meta name="description" content="Placenta Vida: encapsulación de placenta (Placenta Pills), doula, cursos de parto, CPR pediátrico, lactancia y consultas en Puerto Rico. Más de 15 años acompañando familias.">
+<link rel="icon" href="logo.webp">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-<style>
-  :root{
-    --rosa:#F6E1E1;      /* rosa palo */
-    --rosa-2:#FBEFEF;
-    --magenta:#B8336A;
-    --plum:#4A1E3D;
-    --oro:#E8B33D;       /* golden yellow */
-    --crema:#FFFBF7;
-    --texto:#3A2433;
-    --suave:#7A6170;
-    --radio:22px;
-  }
-  *{box-sizing:border-box;margin:0;padding:0}
-  html{scroll-behavior:smooth}
-  body{font-family:"Nunito Sans",system-ui,sans-serif;color:var(--texto);background:var(--crema);line-height:1.65;font-size:17px}
-  h1,h2,h3{font-family:"Fraunces",Georgia,serif;color:var(--plum);line-height:1.15}
-  a{color:inherit}
-  .wrap{max-width:1120px;margin:0 auto;padding:0 24px}
-
-  /* NAV */
-  header{position:sticky;top:0;z-index:50;background:rgba(255,251,247,.92);backdrop-filter:blur(8px);border-bottom:1px solid #f0e2e2}
-  nav{display:flex;align-items:center;justify-content:space-between;height:70px}
-  .logo{font-family:"Fraunces",serif;font-weight:700;font-size:1.45rem;color:var(--plum);text-decoration:none;display:flex;align-items:center;gap:10px}
-  .logo span.dot{width:30px;height:30px;border-radius:50%;background:radial-gradient(circle at 35% 35%,var(--oro),var(--magenta) 70%);display:inline-block}
-  .menu{display:flex;gap:26px;list-style:none}
-  .menu a{text-decoration:none;font-weight:600;font-size:.95rem;color:var(--plum)}
-  .menu a:hover{color:var(--magenta)}
-  .btn{display:inline-block;background:var(--magenta);color:#fff;text-decoration:none;font-weight:700;padding:13px 26px;border-radius:999px;transition:transform .15s,background .15s}
-  .btn:hover{background:var(--plum);transform:translateY(-2px)}
-  .btn.alt{background:transparent;color:var(--plum);border:2px solid var(--plum)}
-  .btn.alt:hover{background:var(--plum);color:#fff}
-  .burger{display:none;background:none;border:0;font-size:1.7rem;color:var(--plum);cursor:pointer}
-
-  /* HERO */
-  .hero{background:linear-gradient(160deg,var(--rosa) 0%,var(--rosa-2) 55%,var(--crema) 100%);padding:90px 0 100px;overflow:hidden;position:relative}
-  .hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center}
-  .eyebrow{display:inline-block;background:#fff;color:var(--magenta);font-weight:700;font-size:.82rem;letter-spacing:.08em;text-transform:uppercase;padding:7px 16px;border-radius:999px;margin-bottom:22px}
-  .hero h1{font-size:clamp(2.3rem,5vw,3.6rem);margin-bottom:20px}
-  .hero h1 em{color:var(--magenta);font-style:italic}
-  .hero p{font-size:1.15rem;color:var(--suave);max-width:520px;margin-bottom:32px}
-  .hero .cta{display:flex;gap:14px;flex-wrap:wrap}
-  .hero-art{position:relative;aspect-ratio:1;max-width:440px;justify-self:center;width:100%}
-  .hero-art .c1{position:absolute;inset:0;border-radius:50%;background:radial-gradient(circle at 40% 40%,#fff 0%,var(--rosa) 60%);box-shadow:0 30px 60px rgba(74,30,61,.12)}
-  .hero-art .c2{position:absolute;width:42%;height:42%;top:8%;right:4%;border-radius:50%;background:var(--oro);opacity:.85}
-  .hero-art .c3{position:absolute;width:30%;height:30%;bottom:6%;left:6%;border-radius:50%;background:var(--magenta);opacity:.9}
-  .hero-art .txt{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;padding:22%;font-family:"Fraunces",serif;font-size:1.35rem;color:var(--plum);font-style:italic}
-
-  /* SECTIONS */
-  section{padding:90px 0}
-  .head{text-align:center;max-width:680px;margin:0 auto 54px}
-  .head h2{font-size:clamp(1.9rem,4vw,2.6rem);margin-bottom:14px}
-  .head p{color:var(--suave);font-size:1.08rem}
-
-  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
-  .card{background:#fff;border-radius:var(--radio);padding:34px 30px;box-shadow:0 10px 30px rgba(74,30,61,.06);border-top:5px solid var(--magenta);display:flex;flex-direction:column}
-  .card:nth-child(2){border-top-color:var(--oro)}
-  .card:nth-child(3){border-top-color:var(--plum)}
-  .icon{width:58px;height:58px;border-radius:16px;background:var(--rosa);display:flex;align-items:center;justify-content:center;font-size:1.7rem;margin-bottom:20px}
-  .card h3{font-size:1.45rem;margin-bottom:12px}
-  .card p{color:var(--suave);margin-bottom:16px}
-  .card ul{list-style:none;margin-bottom:24px;flex:1}
-  .card li{padding-left:24px;position:relative;margin-bottom:8px;font-size:.97rem}
-  .card li::before{content:"";position:absolute;left:0;top:.62em;width:10px;height:10px;border-radius:50%;background:var(--oro)}
-  .card a.more{color:var(--magenta);font-weight:700;text-decoration:none}
-
-  /* CURSOS */
-  .cursos{background:var(--plum);color:#fff}
-  .cursos h2,.cursos h3{color:#fff}
-  .cursos .head p{color:#e9d4df}
-  .curso-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-  .curso{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:var(--radio);padding:30px}
-  .curso .tag{display:inline-block;background:var(--oro);color:var(--plum);font-weight:700;font-size:.78rem;padding:4px 12px;border-radius:999px;margin-bottom:16px;text-transform:uppercase;letter-spacing:.05em}
-  .curso h3{font-size:1.35rem;margin-bottom:10px}
-  .curso p{color:#e9d4df;font-size:.98rem}
-
-  /* SOBRE */
-  .sobre .wrap{display:grid;grid-template-columns:.85fr 1.15fr;gap:60px;align-items:center}
-  .foto{aspect-ratio:4/5;border-radius:200px 200px var(--radio) var(--radio);background:linear-gradient(170deg,var(--rosa),var(--oro));display:flex;align-items:flex-end;justify-content:center;padding:24px;color:var(--plum);font-size:.9rem;text-align:center}
-  .sobre h2{font-size:clamp(1.9rem,4vw,2.5rem);margin-bottom:18px}
-  .sobre p{color:var(--suave);margin-bottom:16px}
-  .valores{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
-  .valores span{background:var(--rosa);color:var(--plum);font-weight:700;font-size:.9rem;padding:8px 16px;border-radius:999px}
-
-  /* PROCESO */
-  .proceso{background:var(--rosa-2)}
-  .pasos{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;counter-reset:paso}
-  .paso{text-align:center;padding:10px}
-  .paso::before{counter-increment:paso;content:counter(paso);display:flex;align-items:center;justify-content:center;width:56px;height:56px;margin:0 auto 16px;border-radius:50%;background:var(--magenta);color:#fff;font-family:"Fraunces",serif;font-size:1.5rem;font-weight:700}
-  .paso h3{font-size:1.15rem;margin-bottom:8px}
-  .paso p{color:var(--suave);font-size:.95rem}
-
-  /* FAQ */
-  .faq{max-width:780px;margin:0 auto}
-  details{background:#fff;border-radius:16px;padding:20px 26px;margin-bottom:14px;box-shadow:0 6px 18px rgba(74,30,61,.05)}
-  summary{cursor:pointer;font-weight:700;color:var(--plum);list-style:none;display:flex;justify-content:space-between;gap:16px}
-  summary::after{content:"+";color:var(--magenta);font-size:1.4rem;line-height:1}
-  details[open] summary::after{content:"–"}
-  details p{margin-top:12px;color:var(--suave)}
-
-  /* CONTACTO */
-  .contacto{background:linear-gradient(150deg,var(--magenta),var(--plum));color:#fff;text-align:center}
-  .contacto h2{color:#fff;font-size:clamp(2rem,4vw,2.8rem);margin-bottom:14px}
-  .contacto p{color:#f6dbe6;max-width:560px;margin:0 auto 34px;font-size:1.1rem}
-  .contacto .btn{background:var(--oro);color:var(--plum)}
-  .contacto .btn:hover{background:#fff}
-  .redes{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin-top:26px}
-  .redes a{color:#fff;text-decoration:none;font-weight:600;border:1px solid rgba(255,255,255,.4);padding:9px 18px;border-radius:999px}
-  .redes a:hover{background:rgba(255,255,255,.12)}
-
-  footer{background:#2C1024;color:#cbb3c2;text-align:center;padding:30px 0;font-size:.9rem}
-
-  .wa{position:fixed;right:22px;bottom:22px;z-index:60;width:60px;height:60px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 25px rgba(0,0,0,.2);text-decoration:none;font-size:1.8rem}
-
-  @media (max-width:900px){
-    .hero .wrap,.sobre .wrap{grid-template-columns:1fr}
-    .hero-art{max-width:320px}
-    .cards,.curso-grid{grid-template-columns:1fr}
-    .pasos{grid-template-columns:1fr 1fr}
-    .menu{display:none;position:absolute;top:70px;left:0;right:0;background:var(--crema);flex-direction:column;padding:20px 24px;gap:16px;border-bottom:1px solid #f0e2e2}
-    .menu.open{display:flex}
-    .burger{display:block}
-    nav .btn{display:none}
-    section{padding:70px 0}
-  }
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body data-page="index">
 
 <header>
   <nav class="wrap">
-    <a href="#inicio" class="logo"><span class="dot"></span>Placenta Vida</a>
+    <a href="index.html" class="logo"><img src="logo.webp" alt="Placenta Vida"></a>
     <ul class="menu" id="menu">
-      <li><a href="#servicios">Servicios</a></li>
-      <li><a href="#cursos">Cursos</a></li>
-      <li><a href="#sobre">Sobre mí</a></li>
-      <li><a href="#preguntas">Preguntas</a></li>
-      <li><a href="#contacto">Contacto</a></li>
+      <li><a href="index.html" data-p="index">Inicio</a></li>
+      <li><a href="placenta-pills.html" data-p="placenta-pills">Placenta Pills</a></li>
+      <li><a href="productos.html" data-p="productos">Productos</a></li>
+      <li><a href="cursos.html" data-p="cursos">Cursos</a></li>
+      <li><a href="consultas.html" data-p="consultas">Consultas</a></li>
+      <li><a href="index.html#contacto">Contacto</a></li>
     </ul>
-    <a href="#contacto" class="btn">Reserva tu cita</a>
+    <a href="https://wa.me/17879053889?text=Hola%20Placenta%20Vida%2C%20quiero%20informaci%C3%B3n" class="btn" target="_blank" rel="noopener">Reservar</a>
     <button class="burger" aria-label="Abrir menú" onclick="document.getElementById('menu').classList.toggle('open')">☰</button>
   </nav>
 </header>
 
-<section class="hero" id="inicio">
+<section class="hero">
   <div class="wrap">
     <div>
-      <span class="eyebrow">Puerto Rico · Embarazo · Parto · Posparto</span>
-      <h1>Acompañamos tu camino a la <em>maternidad</em> con amor y conocimiento</h1>
-      <p>Encapsulación de placenta, acompañamiento de doula y cursos para que vivas tu embarazo, parto y posparto informada, segura y acompañada.</p>
+      <span class="eyebrow">Primera empresa en Puerto Rico</span>
+      <h1>Vive el <em>posparto</em> que sueñas</h1>
+      <p class="lead">Somos el destino favorito para experimentar la magia del consumo de placenta en Puerto Rico. Cada placenta se prepara con los más altos estándares de manejo, calidad y seguridad que mereces. Además, te acompañamos con servicios de doula, cursos y consultas.</p>
       <div class="cta">
-        <a href="#contacto" class="btn">Quiero información</a>
-        <a href="#servicios" class="btn alt">Ver servicios</a>
+        <a href="placenta-pills.html" class="btn">Ver Placenta Pills</a>
+        <a href="cursos.html" class="btn alt">Cursos y consultas</a>
       </div>
     </div>
-    <div class="hero-art" aria-hidden="true">
-      <div class="c1"></div><div class="c2"></div><div class="c3"></div>
-      <div class="txt">“Tu placenta te nutrió. Ahora te sigue cuidando.”</div>
+    <div class="hero-card">
+      <img src="logo.webp" alt="Placenta Vida">
+      <p>“Tu placenta te nutrió.<br>Ahora te sigue cuidando.”</p>
     </div>
   </div>
 </section>
 
-<section id="servicios">
+<div class="wrap">
+  <div class="stats">
+    <div class="stat"><b>+1,750</b><span>mamás felices</span></div>
+    <div class="stat"><b>3,000+</b><span>cursos realizados</span></div>
+    <div class="stat"><b>15+</b><span>años de experiencia</span></div>
+    <div class="stat"><b>862</b><span>personas atendidas en 2025</span></div>
+  </div>
+</div>
+
+<section>
   <div class="wrap">
     <div class="head">
-      <h2>Nuestros servicios</h2>
-      <p>Cuidado integral para ti y tu bebé, desde el embarazo hasta las primeras semanas en casa.</p>
+      <span class="eyebrow">Nuestros servicios</span>
+      <h2>Todo lo que necesitas, en un solo lugar</h2>
+      <p>Te acompañamos desde el embarazo hasta los primeros meses con tu bebé.</p>
     </div>
-    <div class="cards">
-      <article class="card">
+    <div class="grid-4">
+      <div class="card top-m">
+        <div class="icon">💊</div>
+        <h3>Placenta Pills</h3>
+        <p>Encapsulación profesional de tu placenta, con recogido 24/7 en toda la isla.</p>
+        <a href="placenta-pills.html" class="link">Ver paquetes →</a>
+      </div>
+      <div class="card top-o">
         <div class="icon">🌸</div>
-        <h3>Encapsulación de placenta</h3>
-        <p>Preparamos tu placenta con protocolos de higiene y seguridad para que la integres en tu recuperación posparto.</p>
-        <ul>
-          <li>Recogido coordinado en hospital o casa</li>
-          <li>Cápsulas listas en pocos días</li>
-          <li>Opciones de recuerdo: impresión y cordón</li>
-        </ul>
-        <a href="#contacto" class="more">Pedir información →</a>
-      </article>
-      <article class="card">
-        <div class="icon">🤲</div>
-        <h3>Servicios de doula</h3>
-        <p>Apoyo físico, emocional e informativo antes, durante y después del parto, respetando tus decisiones.</p>
-        <ul>
-          <li>Reuniones prenatales y plan de parto</li>
-          <li>Acompañamiento continuo en el parto</li>
-          <li>Visitas de seguimiento posparto</li>
-        </ul>
-        <a href="#contacto" class="more">Pedir información →</a>
-      </article>
-      <article class="card">
-        <div class="icon">🍼</div>
-        <h3>Apoyo en lactancia</h3>
-        <p>Orientación para que la lactancia arranque bien y puedas resolver dudas en los primeros días.</p>
-        <ul>
-          <li>Consulta de lactancia en los primeros días</li>
-          <li>Agarre, posiciones y producción</li>
-          <li>Seguimiento y recursos para casa</li>
-        </ul>
-        <a href="#contacto" class="more">Pedir información →</a>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section class="cursos" id="cursos">
-  <div class="wrap">
-    <div class="head">
-      <h2>Cursos y talleres</h2>
-      <p>Prepárate con información clara y basada en evidencia, sola o con tu pareja.</p>
-    </div>
-    <div class="curso-grid">
-      <div class="curso">
-        <span class="tag">Parto</span>
-        <h3>Preparación para el parto</h3>
-        <p>Etapas del parto, manejo del dolor, posiciones, tus derechos y cómo armar tu plan de parto.</p>
+        <h3>Productos</h3>
+        <p>Placenta Balm, tintura, Placenta Print, arte del cordón y más recuerdos para siempre.</p>
+        <a href="productos.html" class="link">Ver productos →</a>
       </div>
-      <div class="curso">
-        <span class="tag">Posparto</span>
-        <h3>Posparto consciente</h3>
-        <p>Recuperación física y emocional, cuidados del recién nacido y cómo organizar tu red de apoyo.</p>
+      <div class="card top-p">
+        <div class="icon">👶</div>
+        <h3>Cursos</h3>
+        <p>CPR pediátrico, clases de parto, manejo de dolor, posparto y lactancia.</p>
+        <a href="cursos.html" class="link">Ver cursos →</a>
       </div>
-      <div class="curso">
-        <span class="tag">Lactancia</span>
-        <h3>Lactancia desde el inicio</h3>
-        <p>Primeras horas, agarre, señales de hambre, extracción y cómo superar los retos más comunes.</p>
+      <div class="card top-m">
+        <div class="icon">🤍</div>
+        <h3>Consultas 1:1</h3>
+        <p>Embarazo, parto, posparto y lactancia, en tu hogar, en oficina o virtual.</p>
+        <a href="consultas.html" class="link">Ver consultas →</a>
       </div>
     </div>
   </div>
 </section>
 
-<section class="sobre" id="sobre">
-  <div class="wrap">
-    <div class="foto">[ Aquí va tu foto ]</div>
+<section class="bg-rosa">
+  <div class="wrap bio">
+    <div class="bio-foto">[ Foto de Liz ]</div>
     <div>
-      <span class="eyebrow" style="background:var(--rosa)">Sobre mí</span>
-      <h2>Hola, soy Liz</h2>
-      <p>Soy la fundadora de Placenta Vida. Acompaño a familias en Puerto Rico en una de las etapas más importantes de su vida: la llegada de su bebé.</p>
-      <p>Creo que toda persona merece vivir su embarazo, parto y posparto con información, respeto y apoyo. Por eso combino el cuidado de la placenta, el acompañamiento de doula y la educación prenatal en un solo lugar.</p>
-      <div class="valores">
-        <span>Respeto</span><span>Información</span><span>Acompañamiento</span><span>Seguridad</span>
+      <span class="eyebrow" style="background:#fff">¿Quién dirige?</span>
+      <h2>Lizbeth Palacios, MSN, RN</h2>
+      <p>Fundadora y CEO de Placenta Vida, con más de 15 años de experiencia en salud materno-infantil. Certificada en manejo y transporte especializado de placenta.</p>
+      <p>Como enfermera registrada y doula de parto y posparto, Liz combina su formación clínica con su pasión por apoyar a las familias en una de las etapas más importantes de su vida.</p>
+      <div class="chips">
+        <span>MSN, RN</span><span>Doula de parto y posparto</span><span>Consultora en lactancia</span><span>Educadora en salud materna</span><span>Instructora CPR</span>
       </div>
     </div>
   </div>
 </section>
 
-<section class="proceso">
+<section>
   <div class="wrap">
     <div class="head">
-      <h2>¿Cómo funciona?</h2>
-      <p>Reservar es sencillo. Lo ideal es hacerlo durante el embarazo.</p>
+      <span class="eyebrow">Testimonios</span>
+      <h2>Lo que dicen nuestras familias</h2>
+      <p>Palabras reales de familias que acompañamos como doula.</p>
     </div>
-    <div class="pasos">
-      <div class="paso"><h3>Escríbenos</h3><p>Cuéntanos tu fecha probable de parto y qué servicio te interesa.</p></div>
-      <div class="paso"><h3>Conversamos</h3><p>Resolvemos tus dudas y te enviamos detalles y costos.</p></div>
-      <div class="paso"><h3>Reservas</h3><p>Aseguras tu espacio y te damos las instrucciones.</p></div>
-      <div class="paso"><h3>Te acompañamos</h3><p>Estamos contigo en el parto y el posparto.</p></div>
+    <div class="testis">
+      <div class="testi corto">
+        <p>El servicio de Doula de Liz fue de primera; velando siempre por que estuviera haciendo lo propio para mantenerme en buena salud física y emocional. Su dedicación y entrega me demostraron que ella hizo suyo mi sueño, y que daría lo necesario para que yo lograra aquello que tanto anhelaba. Su guía, consejos, conocimiento, apoyo y claridad en momentos de miedo y ansiedad fueron claves para mi proceso. Liz fue parte invaluable de mi equipo y gracias a su guía, dirección y expertise hoy cargo a mi bebé arcoíris. Gracias Liz por tanto amor.</p>
+        <button class="mas">Leer más</button>
+        <div class="quien"><span class="av">O</span><div><b>Ori</b><small>Servicio de doula</small></div></div>
+      </div>
+      <div class="testi corto">
+        <p>Desde nuestra primera reunión supimos que eras la doula que queríamos tener presente en el embarazo. Te destacas por estar actualizada, por tu disponibilidad, por tu trato individualizado, pero sobre todo por tu amor hacia cada una de las familias con las que impactas. Gracias a ti, tuve un embarazo educado, trabajado y soñado, visualizando lo que quería y aceptando lo que la vida tenía para mí, rodeada de una nueva tribu, de amor y apoyo en este proceso tan bello. Gracias por ser y estar. Te elegiríamos infinitas veces más.</p>
+        <button class="mas">Leer más</button>
+        <div class="quien"><span class="av">J</span><div><b>Jennylee</b><small>Servicio de doula</small></div></div>
+      </div>
+      <div class="testi corto">
+        <p>Somos más que bendecidos por tenerte, quiero que sepas que no me arrepiento de haber dicho que sí ese día para que fueras nuestra Doula. Con mucho amor puedo decir que para mí eres la mejor en lo que haces pues eres tan dedicada, responsable, atenta que haces que todo sea más hermoso de lo que es. Eres pieza clave para estos procesos. ¡Qué mucho me ayudaste en todas las áreas; tú ni te imaginas! Te bendigo siempre, sabes que te amamos mucho, pero de verdad no de la boca hacia fuera sino del corazón hacia ti.</p>
+        <button class="mas">Leer más</button>
+        <div class="quien"><span class="av">E</span><div><b>Edwin</b><small>Papá · Servicio de doula</small></div></div>
+      </div>
+      <div class="testi corto">
+        <p>Profesional, mujer, amiga, consejera, educadora y motivadora. Nos encaminó en todo este proceso maravilloso desde el embarazo. Siempre actualizada y con una red de apoyo increíble. Educándonos en familia, creando una comunidad hermosa de apoyo. Siempre comprometida y disponible. Todavía recuerdo esas palabras: ¡¡“ESTOY PA' TI”!! Unos días antes de irme de parto y así fue. En el proceso del parto ahí estuvo, sacando lo mejor de mí. Unos días después del parto tuve una sobreproducción de leche, la cual casi me dio una mastitis, y cuando la necesitaba ahí estuvo ayudándonos y educándonos sin importar la hora que era; estamos bien agradecidos de todo lo que ha hecho por nuestra familia. Eres una Doula extraordinaria y de amar, gracias por esas palabras positivas que siempre me dices. Muchas personas me preguntan si es necesario tener una Doula, y mi contestación es que ¡¡Sí!! La Doula es una pieza clave e importante para todo este proceso. Un embarazo, parto y posparto en salud. ❤️ Gracias.</p>
+        <button class="mas">Leer más</button>
+        <div class="quien"><span class="av">Y</span><div><b>Yesenia</b><small>Servicio de doula</small></div></div>
+      </div>
     </div>
   </div>
 </section>
 
-<section id="preguntas">
+<section class="bg-rosa">
   <div class="wrap">
     <div class="head">
-      <h2>Preguntas frecuentes</h2>
+      <span class="eyebrow" style="background:#fff">Preguntas frecuentes</span>
+      <h2>¿Tienes dudas?</h2>
     </div>
     <div class="faq">
-      <details>
-        <summary>¿Cuándo debo reservar la encapsulación de placenta?</summary>
-        <p>Recomendamos reservar durante el tercer trimestre para coordinar con tiempo el recogido y las instrucciones para el hospital o la casa.</p>
-      </details>
-      <details>
-        <summary>¿Qué necesito decirle al hospital?</summary>
-        <p>Te damos una guía con los pasos para informar a tu equipo médico que deseas conservar tu placenta y cómo debe guardarse.</p>
-      </details>
-      <details>
-        <summary>¿Una doula reemplaza a mi médico o partera?</summary>
-        <p>No. La doula no realiza tareas médicas. Brinda apoyo emocional, físico e informativo y trabaja junto a tu equipo de salud.</p>
-      </details>
-      <details>
-        <summary>¿Los cursos son presenciales o virtuales?</summary>
-        <p>Escríbenos para conocer las fechas y modalidades disponibles.</p>
-      </details>
-      <details>
-        <summary>¿En qué zonas de Puerto Rico ofrecen servicio?</summary>
-        <p>Contáctanos con tu pueblo y hospital, y te confirmamos disponibilidad.</p>
-      </details>
+      <details><summary>¿Cuándo debo reservar mi servicio de Placenta Pills?</summary><p>Lo ideal es reservar durante el embarazo, entre las 36 y 40 semanas o antes. Siempre tenemos espacios, pero reservar con tiempo nos permite coordinar el recogido y darte las instrucciones para el hospital.</p></details>
+      <details><summary>¿Qué hospitales entregan la placenta?</summary><p>Cada vez más hospitales en Puerto Rico entregan la placenta, como Ashford, Bayamón Medical Center y Menonita, entre otros. Escríbenos con el nombre de tu hospital y te orientamos.</p></details>
+      <details><summary>¿En cuánto tiempo recibo mis cápsulas?</summary><p>La entrega es en 3 a 5 días después del recogido.</p></details>
+      <details><summary>¿Una doula reemplaza a mi médico o partera?</summary><p>No. La doula brinda apoyo emocional, físico e informativo, y trabaja junto a tu equipo de salud.</p></details>
+      <details><summary>¿Qué métodos de pago aceptan?</summary><p>ATH Móvil, PayPal, Zelle y tarjeta de crédito. También hay opciones para pagar a tu ritmo; pregúntanos.</p></details>
     </div>
   </div>
 </section>
 
 <section class="contacto" id="contacto">
   <div class="wrap">
-    <h2>Hablemos de tu bebé</h2>
-    <p>Escríbenos con tu fecha probable de parto y el servicio que te interesa. Te respondemos con toda la información.</p>
-    <a href="https://wa.me/1XXXXXXXXXX" class="btn" target="_blank" rel="noopener">Escríbenos por WhatsApp</a>
-    <div class="redes">
-      <a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a>
-      <a href="https://facebook.com/" target="_blank" rel="noopener">Facebook</a>
-      <a href="https://tiktok.com/" target="_blank" rel="noopener">TikTok</a>
-      <a href="mailto:tu-correo@ejemplo.com">Correo</a>
+    <div>
+      <h2>¿Lista para comenzar tu viaje?</h2>
+      <p>Estamos aquí para resolver tus dudas y acompañarte en cada paso. Escríbenos con tu fecha probable de parto y el servicio que te interesa.</p>
+      <div class="cta" style="margin-bottom:22px">
+        <a href="https://wa.me/17879053889?text=Hola%20Placenta%20Vida%2C%20quiero%20informaci%C3%B3n" class="btn oro" target="_blank" rel="noopener">WhatsApp 787-905-3889</a>
+      </div>
+      <div class="redes">
+        <a href="https://instagram.com/placentavida" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://facebook.com/placentavida" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://tiktok.com/@placentavida" target="_blank" rel="noopener">TikTok</a>
+      </div>
     </div>
+    <form class="form" id="form-wa">
+      <h3>Envíanos un mensaje</h3>
+      <label for="nombre">Nombre</label>
+      <input id="nombre" name="nombre" required placeholder="Tu nombre">
+      <label for="servicio">¿Qué te interesa?</label>
+      <select id="servicio" name="servicio">
+        <option>Placenta Pills</option>
+        <option>Productos (Balm, Print, cordón)</option>
+        <option>Curso de CPR pediátrico</option>
+        <option>Clases de parto / manejo de dolor</option>
+        <option>Consulta de embarazo y parto</option>
+        <option>Consulta de posparto y lactancia</option>
+        <option>Servicio de doula</option>
+        <option>Otro</option>
+      </select>
+      <label for="fecha">Fecha probable de parto (opcional)</label>
+      <input id="fecha" name="fecha" placeholder="Ej. marzo 2027">
+      <label for="mensaje">Mensaje (opcional)</label>
+      <textarea id="mensaje" name="mensaje" placeholder="Cuéntanos un poco"></textarea>
+      <button type="submit" class="btn">Enviar por WhatsApp</button>
+      <small>Se abrirá WhatsApp con tu mensaje listo para enviar.</small>
+    </form>
   </div>
 </section>
 
 <footer>
-  <div class="wrap">© 2026 Placenta Vida · Puerto Rico · Hecho con amor 💛</div>
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <span class="logo-f"><img src="logo.webp" alt="Placenta Vida"></span>
+        <p>Primera compañía puertorriqueña especializada en la preparación de placentas para el consumo posparto. Doula, cursos y consultas para familias en Puerto Rico y Estados Unidos.</p>
+      </div>
+      <div>
+        <h4>Servicios</h4>
+        <a href="placenta-pills.html">Placenta Pills</a>
+        <a href="productos.html">Productos</a>
+        <a href="cursos.html">Cursos</a>
+        <a href="consultas.html">Consultas</a>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <a href="https://wa.me/17879053889" target="_blank" rel="noopener">WhatsApp: 787-905-3889</a>
+        <a href="https://instagram.com/placentavida" target="_blank" rel="noopener">Instagram @placentavida</a>
+        <a href="https://facebook.com/placentavida" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://tiktok.com/@placentavida" target="_blank" rel="noopener">TikTok</a>
+        <p style="margin-top:8px">Caguas, Puerto Rico · Lancaster, Pennsylvania</p>
+      </div>
+    </div>
+    <div class="legal">© 2026 Placenta Vida · Hecho con amor para mamás 💗<br>La información de esta página es educativa y no sustituye la evaluación ni el tratamiento de tu proveedor de salud.</div>
+  </div>
 </footer>
 
-<a href="https://wa.me/1XXXXXXXXXX" class="wa" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+<a href="https://wa.me/17879053889?text=Hola%20Placenta%20Vida%2C%20quiero%20informaci%C3%B3n" class="wa-float" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp"><svg viewBox="0 0 32 32"><path d="M16 3C8.8 3 3 8.7 3 15.8c0 2.5.7 4.9 2 7L3 29l6.4-2c2 1.1 4.3 1.7 6.6 1.7 7.2 0 13-5.7 13-12.8S23.2 3 16 3zm0 23.4c-2.1 0-4.1-.6-5.9-1.6l-.4-.3-3.8 1.2 1.2-3.7-.3-.4c-1.2-1.8-1.8-3.8-1.8-5.9C5 9.9 9.9 5.2 16 5.2s11 4.7 11 10.6-4.9 10.6-11 10.6zm6-7.9c-.3-.2-1.9-1-2.2-1.1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.2-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.4.3-.6.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.7s1.2 3.1 1.4 3.4c.2.2 2.4 3.6 5.7 5 .8.3 1.4.5 1.9.7.8.3 1.5.2 2.1.1.6-.1 1.9-.8 2.2-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/></svg></a>
 
 <script>
-  document.querySelectorAll('.menu a').forEach(a=>a.addEventListener('click',()=>document.getElementById('menu').classList.remove('open')));
+  (function(){
+    var p=document.body.getAttribute('data-page');
+    document.querySelectorAll('.menu a[data-p]').forEach(function(a){ if(a.getAttribute('data-p')===p) a.classList.add('activo'); });
+    document.querySelectorAll('.menu a').forEach(function(a){ a.addEventListener('click',function(){ document.getElementById('menu').classList.remove('open'); }); });
+    document.querySelectorAll('.testi .mas').forEach(function(b){ b.addEventListener('click',function(){ var t=b.closest('.testi'); t.classList.toggle('corto'); b.textContent=t.classList.contains('corto')?'Leer más':'Leer menos'; }); });
+    var f=document.getElementById('form-wa');
+    if(f){ f.addEventListener('submit',function(e){ e.preventDefault();
+      var d=new FormData(f);
+      var msg='Hola Placenta Vida, soy '+(d.get('nombre')||'')+'.\nMe interesa: '+(d.get('servicio')||'')+'.';
+      if(d.get('fecha')) msg+='\nFecha probable de parto: '+d.get('fecha')+'.';
+      if(d.get('mensaje')) msg+='\n'+d.get('mensaje');
+      window.open('https://wa.me/17879053889?text='+encodeURIComponent(msg),'_blank');
+    }); }
+  })();
 </script>
 </body>
 </html>

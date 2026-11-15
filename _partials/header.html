@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{TITLE}}</title>
+<meta name="description" content="{{DESC}}">
+<link rel="icon" href="logo.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="{{PAGE}}">
+
+<header>
+  <nav class="wrap">
+    <a href="index.html" class="logo"><img src="logo.webp" alt="Placenta Vida"></a>
+    <ul class="menu" id="menu">
+      <li><a href="index.html" data-p="index">Inicio</a></li>
+      <li><a href="placenta-pills.html" data-p="placenta-pills">Placenta Pills</a></li>
+      <li><a href="productos.html" data-p="productos">Productos</a></li>
+      <li><a href="cursos.html" data-p="cursos">Cursos</a></li>
+      <li><a href="consultas.html" data-p="consultas">Consultas</a></li>
+      <li><a href="index.html#contacto">Contacto</a></li>
+    </ul>
+    <a href="https://wa.me/17879053889?text=Hola%20Placenta%20Vida%2C%20quiero%20informaci%C3%B3n" class="btn" target="_blank" rel="noopener">Reservar</a>
+    <button class="burger" aria-label="Abrir menú" onclick="document.getElementById('menu').classList.toggle('open')">☰</button>
+  </nav>
+</header>
