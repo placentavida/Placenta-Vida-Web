@@ -1,0 +1,56 @@
+<!--TITLE: Tienda | Paquetes y productos de placenta | Placenta Vida-->
+<!--DESC: Paquetes de Placenta Pills desde $175, bálsamo, tintura, placenta print, arte del cordón, brownies y recogido 24/7 en Puerto Rico. Arma tu orden y envíala por WhatsApp.-->
+
+<section class="phero">
+  <div class="wrap">
+    <span class="badge">🛍️ Tienda</span>
+    <h1>Productos artesanales para tu <em>bienestar posparto</em></h1>
+    <p>Escoge tus productos, añádelos al carrito y envíanos tu orden por WhatsApp. Te confirmamos disponibilidad y coordinamos el pago.</p>
+  </div>
+</section>
+
+<section style="padding-top:60px">
+  <div class="wrap">
+    <div class="tabs" role="tablist">
+      <button class="on" data-f="todos">Todos</button>
+      <button data-f="paquete">Paquetes</button>
+      <button data-f="producto">Productos</button>
+      <button data-f="servicio">Servicios</button>
+    </div>
+    <div class="grid g3" id="shop"></div>
+    <p class="center" style="color:var(--muted);margin-top:36px;font-size:.92rem">Sin la compra de pills, los productos individuales tienen un costo adicional de manejo y bioseguridad de la placenta. Los precios pueden cambiar; te confirmamos tu orden por WhatsApp.</p>
+  </div>
+</section>
+
+<section class="bg-blush">
+  <div class="wrap split">
+    <div class="img rv"><img src="img/liz-balsamo-cordon.webp" alt="Liz con el bálsamo y un cordón en forma de corazón" loading="lazy"></div>
+    <div class="rv">
+      <span class="kicker">¿Cómo ordenar?</span>
+      <h2>Separa tu espacio con <em>$50</em></h2>
+      <ul class="checks">
+        <li>Añade tu paquete y productos al carrito</li>
+        <li>Envía tu orden por WhatsApp</li>
+        <li>Envía tu depósito de $50 por ATH Móvil o PayPal (friends &amp; family) al 787-905-3889</li>
+        <li>El balance se paga cuando recibimos tu placenta y confirmamos tu orden</li>
+      </ul>
+      <p style="font-size:.9rem">El depósito no es reembolsable ni transferible a otros servicios.</p>
+      <button class="btn" onclick="document.querySelector('.cart-btn').click()">Ver mi carrito</button>
+    </div>
+  </div>
+</section>
+
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  var shop=document.getElementById('shop');
+  function draw(f){
+    shop.innerHTML=PV_PRODUCTS.filter(function(p){return f==='todos'||p.cat===f;}).map(function(p){
+      var tag={paquete:'Paquete',producto:'Producto',servicio:'Servicio'}[p.cat];
+      return '<article class="card"><div class="ph"><img src="'+p.img+'" alt="'+p.n+'" loading="lazy"></div><div class="bd"><span class="pill-tag">'+(p.top?'⭐ Favorito':tag)+'</span><h3>'+p.n+'</h3><p>'+p.d+'</p><div class="row"><span class="price">$'+p.p+'</span><button class="btn sm" data-id="'+p.id+'">Añadir al carrito</button></div></div></article>';
+    }).join('');
+    shop.querySelectorAll('button[data-id]').forEach(function(b){ b.addEventListener('click',function(){ PV_add(b.dataset.id); }); });
+  }
+  document.querySelectorAll('.tabs button').forEach(function(t){ t.addEventListener('click',function(){ document.querySelectorAll('.tabs button').forEach(function(x){x.classList.remove('on');}); t.classList.add('on'); draw(t.dataset.f); }); });
+  draw('todos');
+});
+</script>
