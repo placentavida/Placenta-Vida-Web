@@ -7,7 +7,12 @@
 <meta name="description" content="Encapsulación de placenta en Puerto Rico con Lizbeth Palacios, MSN, RN. Paquetes desde $175, recogido 24/7 en toda la isla y entrega en 3 a 5 días.">
 <meta property="og:title" content="Placenta Pills | Placenta Vida">
 <meta property="og:description" content="Tu placenta, convertida en bienestar y recuerdos para tu posparto. Paquetes desde $175.">
-<meta property="og:image" content="../img/hero-liz.webp">
+<meta property="og:image" content="https://placentavida.github.io/Placenta-Vida-Web/img/hero-liz.webp">
+<meta property="og:url" content="https://placentavida.github.io/Placenta-Vida-Web/pills/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://placentavida.github.io/Placenta-Vida-Web/pills/">
+<link rel="preload" as="image" href="../img/hero-liz.webp">
 <link rel="icon" href="../logo.webp">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -67,8 +72,8 @@ h2 em,h1 em{font-style:italic;color:var(--magenta)}
 .hero-meta b{display:block;font-family:var(--serif);font-size:2.4rem;font-weight:500;color:var(--ciruela);line-height:1}
 .hero-meta span{font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:var(--gris)}
 .hero-img{position:relative;background:var(--rosa);height:calc(100vh - 84px);min-height:620px;align-self:start}
-.hero-img img{width:100%;height:100%;object-fit:cover;object-position:center 78%}
-.sello{position:absolute;left:-70px;bottom:70px;width:150px;height:150px;border-radius:50%;background:var(--ciruela);color:#fff;display:flex;align-items:center;justify-content:center}
+.hero-img img{width:100%;height:100%;object-fit:cover;object-position:center 40%}
+.sello{position:absolute;left:-75px;top:46px;width:150px;height:150px;border-radius:50%;background:var(--ciruela);color:#fff;display:flex;align-items:center;justify-content:center}
 .sello svg{position:absolute;inset:0;animation:gira 22s linear infinite}
 .sello svg text{font-family:var(--sans);font-size:9.6px;letter-spacing:2.6px;fill:#fff;text-transform:uppercase}
 .sello b{font-family:var(--serif);font-size:2.2rem;font-weight:500;font-style:italic}
@@ -250,6 +255,7 @@ footer .legal{border-top:1px solid rgba(255,255,255,.12);margin-top:44px;padding
 .wa{position:fixed;right:22px;bottom:22px;z-index:90;width:62px;height:62px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 12px 30px rgba(0,0,0,.25)}
 .wa svg{width:32px;height:32px;fill:#fff}
 
+a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(--oro);outline-offset:3px}
 .rv{opacity:0;transform:translateY(34px);transition:opacity 1s ease,transform 1s ease}
 .rv.in{opacity:1;transform:none}
 
@@ -257,7 +263,7 @@ footer .legal{border-top:1px solid rgba(255,255,255,.12);margin-top:44px;padding
   .hero{grid-template-columns:1fr;min-height:auto}
   .hero-txt{padding:50px 28px 60px;order:2}
   .hero-img{height:auto;aspect-ratio:2/3;min-height:0;order:1}
-  .sello{left:auto;right:24px;bottom:-60px;width:120px;height:120px}
+  .sello{left:auto;top:auto;right:24px;bottom:-60px;width:120px;height:120px}
   .sello b{font-size:1.8rem}
   .nav-links li:not(:last-child){display:none}
   .intro,.ben,.builder .wrap,.liz .wrap,.faq .wrap,.prod{grid-template-columns:1fr;gap:56px}
@@ -279,6 +285,7 @@ footer .legal{border-top:1px solid rgba(255,255,255,.12);margin-top:44px;padding
   .nav img{height:42px}
 }
 </style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "LocalBusiness", "name": "Placenta Vida", "description": "Encapsulación de placenta, productos de placenta, doula y cursos en Puerto Rico.", "telephone": "+1-787-905-3889", "address": {"@type": "PostalAddress", "addressLocality": "Gurabo", "addressRegion": "PR", "addressCountry": "US"}, "url": "https://placentavida.github.io/Placenta-Vida-Web/", "image": "https://placentavida.github.io/Placenta-Vida-Web/img/hero-liz.webp", "sameAs": ["https://instagram.com/placentavida", "https://facebook.com/placentavida", "https://tiktok.com/@placentavida"], "makesOffer": [{"@type": "Offer", "name": "Solo Pills", "price": "175", "priceCurrency": "USD"}, {"@type": "Offer", "name": "Pills & Peace", "price": "195", "priceCurrency": "USD"}, {"@type": "Offer", "name": "Pills & Care", "price": "235", "priceCurrency": "USD"}, {"@type": "Offer", "name": "Pills & Love", "price": "245", "priceCurrency": "USD"}, {"@type": "Offer", "name": "Esencia de Reina", "price": "255", "priceCurrency": "USD"}, {"@type": "Offer", "name": "Lux Box", "price": "375", "priceCurrency": "USD"}]}</script>
 </head>
 <body>
 
@@ -311,7 +318,7 @@ footer .legal{border-top:1px solid rgba(255,255,255,.12);margin-top:44px;padding
     </div>
   </div>
   <div class="hero-img">
-    <img src="../img/hero-liz.webp" alt="Lizbeth Palacios, MSN, RN, fundadora de Placenta Vida">
+    <img src="../img/hero-liz.webp" alt="Lizbeth Palacios, MSN, RN, fundadora de Placenta Vida" fetchpriority="high">
     <div class="sello" aria-hidden="true">
       <svg viewBox="0 0 150 150"><defs><path id="c" d="M75,75 m-58,0 a58,58 0 1,1 116,0 a58,58 0 1,1 -116,0"/></defs><text><textPath href="#c">Primera compañía puertorriqueña registrada ·</textPath></text></svg>
       <b>PV</b>
@@ -329,7 +336,7 @@ footer .legal{border-top:1px solid rgba(255,255,255,.12);margin-top:44px;padding
 <section>
   <div class="wrap intro">
     <div class="foto rv">
-      <img src="../img/capsula.webp" alt="Cápsula de placenta">
+      <img loading="lazy" decoding="async" src="../img/capsula.webp" alt="Cápsula de placenta">
       <div class="chip"><b>$175</b>Solo pills</div>
     </div>
     <div class="rv">
@@ -350,10 +357,10 @@ footer .legal{border-top:1px solid rgba(255,255,255,.12);margin-top:44px;padding
       <p>Nuestras facilidades están en Gurabo, Puerto Rico, donde procesamos las placentas de toda la isla.</p>
     </div>
     <div class="pasos">
-      <div class="paso rv"><div class="img"><img src="../img/liz-corazon.webp" alt="Liz haciendo un corazón con las manos"></div><div class="txt"><span class="num">01</span><h3>Separas tu espacio</h3><p>Envías tu depósito de $50 y te damos las instrucciones para tu hospital o parto en casa.</p></div></div>
-      <div class="paso rv"><div class="img"><img src="../img/higiene.webp" alt="Higiene y bioseguridad" style="object-position:70% center"></div><div class="txt"><span class="num">02</span><h3>Recogemos tu placenta</h3><p>Servicio 24/7 en toda la isla, con transporte especializado y contenedor adecuado.</p></div></div>
-      <div class="paso rv"><div class="img"><img src="../img/cordon-arte.webp" alt="Preparación del arte del cordón con equipo de protección"></div><div class="txt"><span class="num">03</span><h3>La preparamos</h3><p>Personal certificado en manejo, preparación y transporte de placenta, conforme a regulaciones de salud.</p></div></div>
-      <div class="paso rv"><div class="img"><img src="../img/bandeja-productos.webp" alt="Bandeja dorada con productos de placenta"></div><div class="txt"><span class="num">04</span><h3>Recibes tu orden</h3><p>Tus cápsulas y productos listos en 3 a 5 días. El balance se paga al confirmar tu orden.</p></div></div>
+      <div class="paso rv"><div class="img"><img loading="lazy" decoding="async" src="../img/liz-corazon.webp" alt="Liz haciendo un corazón con las manos"></div><div class="txt"><span class="num">01</span><h3>Separas tu espacio</h3><p>Envías tu depósito de $50 y te damos las instrucciones para tu hospital o parto en casa.</p></div></div>
+      <div class="paso rv"><div class="img"><img loading="lazy" decoding="async" src="../img/higiene.webp" alt="Higiene y bioseguridad" style="object-position:70% center"></div><div class="txt"><span class="num">02</span><h3>Recogemos tu placenta</h3><p>Servicio 24/7 en toda la isla, con transporte especializado y contenedor adecuado.</p></div></div>
+      <div class="paso rv"><div class="img"><img loading="lazy" decoding="async" src="../img/cordon-arte.webp" alt="Preparación del arte del cordón con equipo de protección"></div><div class="txt"><span class="num">03</span><h3>La preparamos</h3><p>Personal certificado en manejo, preparación y transporte de placenta, conforme a regulaciones de salud.</p></div></div>
+      <div class="paso rv"><div class="img"><img loading="lazy" decoding="async" src="../img/bandeja-productos.webp" alt="Bandeja dorada con productos de placenta"></div><div class="txt"><span class="num">04</span><h3>Recibes tu orden</h3><p>Tus cápsulas y productos listos en 3 a 5 días. El balance se paga al confirmar tu orden.</p></div></div>
     </div>
   </div>
 </section>
@@ -366,27 +373,27 @@ footer .legal{border-top:1px solid rgba(255,255,255,.12);margin-top:44px;padding
       <p>Todos incluyen la encapsulación profesional de tu placenta. A cualquier paquete puedes añadirle más productos.</p>
     </div>
     <div class="pk-grid">
-      <article class="pk rv"><div class="kit one"><figure><img src="../img/kit/pills.webp" alt="Pills"><figcaption>Placenta Pills</figcaption></figure></div><div class="body">
+      <article class="pk rv"><div class="kit one"><figure><img loading="lazy" decoding="async" src="../img/kit/pills.webp" alt="Pills"><figcaption>Placenta Pills</figcaption></figure></div><div class="body">
         <h3>Solo Pills</h3><div class="precio">$175</div>
         <ul><li>Encapsulación de tu placenta</li><li>Cápsulas veganas, sin gluten y Non-GMO</li></ul>
         <a class="btn ghost" href="https://wa.me/17879053889?text=Hola%20Liz%2C%20me%20interesa%20el%20paquete%20Solo%20Pills%20(%24175)" target="_blank" rel="noopener">Lo quiero</a></div></article>
-      <article class="pk rv"><div class="kit"><figure><img src="../img/kit/pills.webp" alt="Pills"><figcaption>Pills</figcaption></figure><figure><img src="../img/kit/foto-flores.webp" alt="Foto con flores"><figcaption>Foto con flores</figcaption></figure><figure><img src="../img/kit/cordon.webp" alt="Cordón"><figcaption>Cordón</figcaption></figure></div><div class="body">
+      <article class="pk rv"><div class="kit"><figure><img loading="lazy" decoding="async" src="../img/kit/pills.webp" alt="Pills"><figcaption>Pills</figcaption></figure><figure><img loading="lazy" decoding="async" src="../img/kit/foto-flores.webp" alt="Foto con flores"><figcaption>Foto con flores</figcaption></figure><figure><img loading="lazy" decoding="async" src="../img/kit/cordon.webp" alt="Cordón"><figcaption>Cordón</figcaption></figure></div><div class="body">
         <h3>Pills &amp; Peace</h3><div class="precio">$195</div>
         <ul><li>Placenta Pills</li><li>Foto de tu placenta con flores</li><li>Arte del cordón umbilical</li></ul>
         <a class="btn ghost" href="https://wa.me/17879053889?text=Hola%20Liz%2C%20me%20interesa%20el%20paquete%20Pills%20%26%20Peace%20(%24195)" target="_blank" rel="noopener">Lo quiero</a></div></article>
-      <article class="pk rv"><div class="kit"><figure><img src="../img/kit/pills.webp" alt="Pills"><figcaption>Pills</figcaption></figure><figure><img src="../img/kit/balsamo.webp" alt="Bálsamo"><figcaption>Bálsamo</figcaption></figure><figure><img src="../img/kit/print.webp" alt="Print"><figcaption>Print</figcaption></figure><figure><img src="../img/kit/foto-flores.webp" alt="Foto con flores"><figcaption>Foto con flores</figcaption></figure><figure><img src="../img/kit/cordon.webp" alt="Cordón"><figcaption>Cordón</figcaption></figure></div><div class="body">
+      <article class="pk rv"><div class="kit"><figure><img loading="lazy" decoding="async" src="../img/kit/pills.webp" alt="Pills"><figcaption>Pills</figcaption></figure><figure><img loading="lazy" decoding="async" src="../img/kit/balsamo.webp" alt="Bálsamo"><figcaption>Bálsamo</figcaption></figure><figure><img loading="lazy" decoding="async" src="../img/kit/print.webp" alt="Print"><figcaption>Print</figcaption></figure><figure><img loading="lazy" decoding="async" src="../img/kit/foto-flores.webp" alt="Foto con flores"><figcaption>Foto con flores</figcaption></figure><figure><img loading="lazy" decoding="async" src="../img/kit/cordon.webp" alt="Cordón"><figcaption>Cordón</figcaption></figure></div><div class="body">
         <h3>Pills &amp; Care</h3><div class="precio">$235</div>
         <ul><li>Placenta Pills</li><li>Bálsamo de placenta</li><li>Placenta print</li><li>Foto de tu placenta con flores</li><li>Arte del cordón umbilical</li></ul>
         <a class="btn ghost" href="https://wa.me/17879053889?text=Hola%20Liz%2C%20me%20interesa%20el%20paquete%20Pills%20%26%20Care%20(%24235)" target="_blank" rel="noopener">Lo quiero</a></div></article>
-      <article class="pk top rv"><span class="badge">Favorito</span><div class="kit"><figure><img src="../img/kit/pills.webp" alt="Pills"><figcaption>Pills</figcaption></figure><figure><img src="../img/kit/tintura.webp" alt="Tintura"><figcaption>Tintura</figcaption></figure><figure><img src="../img/kit/balsamo.webp" alt="Bálsamo"><figcaption>Bálsamo</figcaption></figure><figure><img src="../img/kit/print.webp" alt="Print"><figcaption>Print</figcaption></figure><figure><img src="../img/kit/foto-flores.webp" alt="Foto con flores"><figcaption>Foto con flores</figcaption></figure><figure><img src="../img/kit/cordon.webp" alt="Cordón"><figcaption>Cordón</figcaption></figure></div><div class="body">
+      <article class="pk top rv"><span class="badge">Favorito</span><div class="kit"><figure><img loading="lazy" decoding="async" src="../img/kit/pills.webp" alt="Pills"><figcaption>Pills</figcaption></figure><figure><img loading="lazy" decoding="async" src="../img/kit/tintura.webp" alt="Tintura"><figcaption>Tintura</figcaption></figure><figure><img loading="lazy" decoding="async" src="../img/kit/balsamo.webp" alt="Bálsamo"><figcaption>Bálsamo</figcaption></figure><figure><img loading="lazy" decoding="async" src="../img/kit/print.webp" alt="Print"><figcaption>Print</figcaption></figure><figure><img loading="lazy" decoding="async" src="../img/kit/foto-flores.webp" alt="Foto con flores"><figcaption>Foto con flores</figcaption></figure><figure><img loading="lazy" decoding="async" src="../img/kit/cordon.webp" alt="Cordón"><figcaption>Cordón</figcaption></figure></div><div class="body">
         <h3>Pills &amp; Love</h3><div class="precio">$245</div>
         <ul><li>Placenta Pills</li><li>Tintura de placenta</li><li>Bálsamo de placenta</li><li>Placenta print</li><li>Foto de tu placenta con flores</li><li>Arte del cordón con forma especial</li></ul>
         <a class="btn" href="https://wa.me/17879053889?text=Hola%20Liz%2C%20me%20interesa%20el%20paquete%20Pills%20%26%20Love%20(%24245)" target="_blank" rel="noopener">Lo quiero</a></div></article>
-      <article class="pk rv"><div class="kit"><figure><img src="../img/kit/pills.webp" alt="Pills"><figcaption>Pills</figcaption></figure><figure><img src="../img/kit/balsamo.webp" alt="Bálsamo"><figcaption>Bálsamo</figcaption></figure><figure><img src="../img/kit/print.webp" alt="Print"><figcaption>Print</figcaption></figure><figure><img src="../img/kit/foto-flores.webp" alt="Foto con flores"><figcaption>Foto con flores</figcaption></figure><figure><img src="../img/kit/cordon.webp" alt="Cordón"><figcaption>Cordón</figcaption></figure><figure><img src="../img/kit/brownies.webp" alt="Brownies"><figcaption>Brownies</figcaption></figure></div><div class="body">
+      <article class="pk rv"><div class="kit"><figure><img loading="lazy" decoding="async" src="../img/kit/pills.webp" alt="Pills"><figcaption>Pills</figcaption></figure><figure><img loading="lazy" decoding="async" src="../img/kit/balsamo.webp" alt="Bálsamo"><figcaption>Bálsamo</figcaption></figure><figure><img loading="lazy" decoding="async" src="../img/kit/print.webp" alt="Print"><figcaption>Print</figcaption></figure><figure><img loading="lazy" decoding="async" src="../img/kit/foto-flores.webp" alt="Foto con flores"><figcaption>Foto con flores</figcaption></figure><figure><img loading="lazy" decoding="async" src="../img/kit/cordon.webp" alt="Cordón"><figcaption>Cordón</figcaption></figure><figure><img loading="lazy" decoding="async" src="../img/kit/brownies.webp" alt="Brownies"><figcaption>Brownies</figcaption></figure></div><div class="body">
         <h3>Esencia de Reina</h3><div class="precio">$255</div>
         <ul><li>Placenta Pills</li><li>Bálsamo de placenta</li><li>Placenta print</li><li>Foto de tu placenta con flores</li><li>Arte del cordón umbilical</li><li>Placenta Brownies</li></ul>
         <a class="btn ghost" href="https://wa.me/17879053889?text=Hola%20Liz%2C%20me%20interesa%20el%20paquete%20Esencia%20de%20Reina%20(%24255)" target="_blank" rel="noopener">Lo quiero</a></div></article>
-      <article class="pk rv"><span class="badge">Experiencia completa</span><div class="kit"><figure><img src="../img/kit/pills.webp" alt="Pills"><figcaption>Pills</figcaption></figure><figure><img src="../img/kit/tintura.webp" alt="Tintura"><figcaption>Tintura</figcaption></figure><figure><img src="../img/kit/balsamo.webp" alt="Bálsamo"><figcaption>Bálsamo</figcaption></figure><figure><img src="../img/kit/print.webp" alt="Print"><figcaption>Print</figcaption></figure><figure><img src="../img/kit/foto-flores.webp" alt="Foto con flores"><figcaption>Foto con flores</figcaption></figure><figure><img src="../img/kit/cordon.webp" alt="Cordón"><figcaption>Cordón</figcaption></figure><figure><img src="../img/kit/brownies.webp" alt="Brownies"><figcaption>Brownies</figcaption></figure><figure><img src="../img/kit/galletas.webp" alt="Galletas"><figcaption>Galletas</figcaption></figure><figure><img src="../img/kit/prenda.webp" alt="Prenda"><figcaption>Prenda</figcaption></figure></div><div class="body">
+      <article class="pk rv"><span class="badge">Experiencia completa</span><div class="kit"><figure><img loading="lazy" decoding="async" src="../img/kit/pills.webp" alt="Pills"><figcaption>Pills</figcaption></figure><figure><img loading="lazy" decoding="async" src="../img/kit/tintura.webp" alt="Tintura"><figcaption>Tintura</figcaption></figure><figure><img loading="lazy" decoding="async" src="../img/kit/balsamo.webp" alt="Bálsamo"><figcaption>Bálsamo</figcaption></figure><figure><img loading="lazy" decoding="async" src="../img/kit/print.webp" alt="Print"><figcaption>Print</figcaption></figure><figure><img loading="lazy" decoding="async" src="../img/kit/foto-flores.webp" alt="Foto con flores"><figcaption>Foto con flores</figcaption></figure><figure><img loading="lazy" decoding="async" src="../img/kit/cordon.webp" alt="Cordón"><figcaption>Cordón</figcaption></figure><figure><img loading="lazy" decoding="async" src="../img/kit/brownies.webp" alt="Brownies"><figcaption>Brownies</figcaption></figure><figure><img loading="lazy" decoding="async" src="../img/kit/galletas.webp" alt="Galletas"><figcaption>Galletas</figcaption></figure><figure><img loading="lazy" decoding="async" src="../img/kit/prenda.webp" alt="Prenda"><figcaption>Prenda</figcaption></figure></div><div class="body">
         <h3>Lux Box</h3><div class="precio">$375</div>
         <ul><li>Placenta Pills y tintura</li><li>Bálsamo de placenta</li><li>Placenta print y foto con flores</li><li>Arte del cordón umbilical</li><li>Placenta Brownies y galletas de lactancia</li><li>Prenda de recuerdo en caja de regalo</li></ul>
         <a class="btn ghost" href="https://wa.me/17879053889?text=Hola%20Liz%2C%20me%20interesa%20el%20paquete%20Lux%20Box%20(%24375)" target="_blank" rel="noopener">Lo quiero</a></div></article>
@@ -401,7 +408,7 @@ footer .legal{border-top:1px solid rgba(255,255,255,.12);margin-top:44px;padding
       <span class="kicker" style="color:var(--rosa)">Arma tu orden</span>
       <h2>Hazlo <em>tuyo</em>.</h2>
       <p>Empieza con tus Placenta Pills y añade lo que quieras. Te mostramos el total al momento y te enviamos el resumen por WhatsApp.</p>
-      <img src="../img/liz-balsamo-cordon.webp" alt="Liz sosteniendo el bálsamo y un cordón en forma de corazón">
+      <img loading="lazy" decoding="async" src="../img/liz-balsamo-cordon.webp" alt="Liz sosteniendo el bálsamo y un cordón en forma de corazón">
     </div>
     <div class="panel rv" id="panel">
       <h3>Tu orden</h3>
@@ -423,7 +430,7 @@ footer .legal{border-top:1px solid rgba(255,255,255,.12);margin-top:44px;padding
 </section>
 
 <section class="prod" style="padding:0">
-  <div class="img"><img src="../img/productos.webp" alt="Bálsamo y tintura de placenta en bandeja dorada"></div>
+  <div class="img"><img loading="lazy" decoding="async" src="../img/productos.webp" alt="Bálsamo y tintura de placenta en bandeja dorada"></div>
   <div class="lista rv">
     <span class="kicker">Productos individuales</span>
     <h2>Pequeños rituales <em>para tu posparto</em>.</h2>
@@ -470,7 +477,7 @@ footer .legal{border-top:1px solid rgba(255,255,255,.12);margin-top:44px;padding
   <div class="wrap">
     <div class="fotos rv">
       <img class="a" src="../img/liz-logo.webp" alt="Lizbeth Palacios en las facilidades de Placenta Vida">
-      <img class="b" src="../img/liz-capsula.webp" alt="Liz mostrando una cápsula de placenta">
+      <img loading="lazy" decoding="async" class="b" src="../img/liz-capsula.webp" alt="Liz mostrando una cápsula de placenta">
     </div>
     <div class="rv">
       <span class="kicker">¿Quién dirige?</span>
@@ -512,7 +519,7 @@ footer .legal{border-top:1px solid rgba(255,255,255,.12);margin-top:44px;padding
 </section>
 
 <section class="cierre">
-  <img src="../img/flores.webp" alt="Pared de flores">
+  <img loading="lazy" decoding="async" src="../img/flores.webp" alt="Pared de flores">
   <div class="wrap">
     <span class="kicker" style="color:var(--rosa)">Placenta Vida</span>
     <h2>Vive el posparto <em>que sueñas</em>.</h2>
